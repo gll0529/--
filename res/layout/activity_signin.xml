@@ -1,0 +1,79 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+   	android:orientation="vertical"
+   	android:background="@color/bgcolor" >
+   	 <include layout="@layout/core_title"/>
+   	 <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent"
+   	     android:padding="30dp">
+   	     
+   	     <TextView android:id="@+id/signin_country"
+   	         android:layout_width="wrap_content" android:layout_height="wrap_content"
+   	         android:text="@string/country" android:textSize="16sp" 
+   	         android:textColor="@color/textcolor" android:layout_marginTop="20dp"/>
+   	     <TextView android:id="@+id/signin_chongguo"
+   	         android:layout_width="wrap_content" android:layout_height="wrap_content"
+   	         android:text="中国" android:textSize="14sp" 
+   	         android:textColor="@color/green" android:layout_alignParentRight="true"
+   	         android:paddingRight="7dp" android:layout_marginTop="23dp"/>
+   	    
+   	     <View android:id="@+id/signin_line"
+   	         android:layout_width="match_parent" android:layout_height="0.5dp"
+   	         android:background="#CECECE" android:layout_below="@+id/signin_country"
+   	         android:layout_marginTop="5dp"/>
+   	     
+   	     <ImageView android:layout_width="13dp" android:layout_height="13dp"
+   	         android:src="@drawable/spinner" android:layout_alignBottom="@+id/signin_line"
+   	         android:layout_alignParentRight="true" android:scaleType="fitXY"/>
+   	     
+   	     <EditText android:id="@+id/signin_phone"
+   	         android:layout_width="match_parent" android:layout_height="wrap_content"
+   	         android:layout_below="@+id/signin_line" android:background="@drawable/login_edit"
+   	         android:hint="@string/editphone" android:textSize="16sp"
+   	         android:paddingLeft="100dp" android:layout_marginTop="30dp"
+   	         android:textColor="#969696"  android:phoneNumber="true"/>
+   	     <TextView android:layout_width="100dp" android:layout_height="wrap_content"
+   	         android:layout_alignTop="@+id/signin_phone" android:text="+86"
+   	         android:gravity="center" android:textColor="@color/textcolor"
+   	         android:textSize="16sp" android:paddingTop="4dp"/>
+   	     
+   	     <EditText android:id="@+id/signin_yanzhengba"
+   	         android:layout_width="match_parent" android:layout_height="wrap_content"
+   	         android:layout_below="@+id/signin_phone" android:background="@drawable/login_edit"
+   	         android:hint="请输入验证码" android:textSize="16sp"
+   	         android:paddingLeft="100dp" android:layout_marginTop="30dp"
+   	         android:textColor="#969696"  android:phoneNumber="true"/>
+   	     <TextView android:layout_width="100dp" android:layout_height="wrap_content"
+   	         android:layout_alignTop="@+id/signin_yanzhengba" android:text="验证码"
+   	         android:gravity="center" android:textColor="@color/textcolor"
+   	         android:textSize="16sp" android:paddingTop="4dp"/>
+   	     <Button android:layout_width="60dp" android:layout_height="30dp"
+   	         android:text="发送验证码" android:background="@drawable/login_bt"
+   	         android:layout_alignParentRight="true"  android:layout_below="@+id/signin_phone"
+   	         android:textSize="10sp" android:textColor="#ffffff" android:layout_marginTop="28dp"
+   	         android:layout_marginRight="5dp" android:id="@+id/signin_yzm"/>
+   	     
+   	     <EditText android:id="@+id/signin_psd"
+   	         android:layout_width="match_parent" android:layout_height="wrap_content"
+   	         android:layout_below="@+id/signin_yanzhengba" android:background="@drawable/login_edit"
+   	         android:hint="填写密码" android:textSize="16sp"
+   	         android:paddingLeft="100dp" android:layout_marginTop="30dp"
+   	         android:textColor="#969696"  />
+   	     <TextView android:layout_width="100dp" android:layout_height="wrap_content"
+   	         android:layout_alignTop="@+id/signin_psd" android:text="密码"
+   	         android:gravity="center" android:textColor="@color/textcolor"
+   	         android:textSize="16sp" android:paddingTop="4dp"/>
+   	     
+   	     <Button android:id="@+id/signin_bt"
+   	         android:layout_width="match_parent" android:layout_height="40dp"
+   	         android:text="注册" android:background="@drawable/login_bt"
+   	         android:layout_below="@+id/signin_psd" android:layout_marginTop="40dp"
+   	         android:textColor="#ffffff" android:textSize="20sp"/>
+   	     
+   	     
+   	 </RelativeLayout>
+
+   
+
+</LinearLayout>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff" >
+    <TextView android:id="@+id/groupchat_lv_zimu" android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:text="#"
+        android:padding="5dp"  android:background="@color/bgcolor"/>
+    <TextView android:id="@+id/groupchat_lv_name" android:layout_width="match_parent"
+        android:layout_height="60dp" android:text="sadfa"
+        android:layout_below="@id/groupchat_lv_zimu" android:textSize="17dp"
+        android:gravity="center_vertical" android:paddingLeft="100dp"
+        android:background="#ffffff" />
+    
+    <CheckBox  android:id="@+id/groupchat_lv_check" android:layout_width="20dp"
+        android:layout_height="20dp" android:button="@null"
+        android:background="@drawable/d_check_pressde" android:layout_below="@id/groupchat_lv_zimu"
+        android:layout_marginTop="19dp" android:layout_marginLeft="10dp"
+        android:clickable="false"  android:focusable="false"/>
+    
+    <com.wuxianedu.widget.RoundImageView android:id="@+id/groupchat_lv_head" android:layout_width="50dp"
+        android:layout_height="50dp" android:src="@drawable/head_nor"
+        android:scaleType="centerCrop" android:layout_alignTop="@id/groupchat_lv_name"
+        android:layout_margin="5dp" android:layout_toRightOf="@id/groupchat_lv_check"/>
+
+</RelativeLayout>

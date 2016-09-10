@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="@color/bgcolor">
+    
+	<TextView android:layout_width="match_parent" android:layout_height="50dp"
+        android:drawableLeft="@drawable/v2" android:drawableRight="@drawable/right"
+        android:text="朋友圈" android:padding="15dp" android:background="@drawable/d_click" 
+        android:layout_marginTop="20dp"
+        android:textSize="15sp"  android:drawablePadding="10dp" 
+        android:id="@+id/find_friend_quan"/>
+	
+	<TextView android:layout_width="match_parent" android:layout_height="50dp"
+        android:drawableLeft="@drawable/icon_de_saoyisao" android:drawableRight="@drawable/right"
+        android:text="扫一扫" android:padding="15dp" android:background="#ffffff" android:layout_marginTop="20dp"
+        android:textSize="15sp"  android:drawablePadding="10dp" />
+	
+	<TextView android:layout_width="match_parent" android:layout_height="50dp"
+        android:drawableLeft="@drawable/icon_de_yao" android:drawableRight="@drawable/right"
+        android:text="摇一摇" android:padding="15dp" android:background="#ffffff"  android:layout_marginTop="0.3dp"
+        android:textSize="15sp"  android:drawablePadding="10dp" />
+	
+	<TextView android:layout_width="match_parent" android:layout_height="50dp"
+        android:drawableLeft="@drawable/icon_de_nearby" android:drawableRight="@drawable/right"
+        android:text="附近的人" android:padding="15dp" android:background="#ffffff" android:layout_marginTop="20dp"
+        android:textSize="15sp"  android:drawablePadding="10dp" />
+	
+	<TextView android:layout_width="match_parent" android:layout_height="50dp"
+        android:drawableLeft="@drawable/icon_de_ping" android:drawableRight="@drawable/right"
+        android:text="漂流瓶" android:padding="15dp" android:background="#ffffff"  android:layout_marginTop="0.3dp"
+        android:textSize="15sp"  android:drawablePadding="10dp" />
+	
+	<TextView android:layout_width="match_parent" android:layout_height="50dp"
+        android:drawableLeft="@drawable/icon_de_shop" android:drawableRight="@drawable/right"
+        android:text="购物" android:padding="15dp" android:background="#ffffff" android:layout_marginTop="20dp"
+        android:textSize="15sp"  android:drawablePadding="10dp" />
+	
+	<TextView android:layout_width="match_parent" android:layout_height="50dp"
+        android:drawableLeft="@drawable/icon_de_game" android:drawableRight="@drawable/right"
+        android:text="游戏" android:padding="15dp" android:background="#ffffff"  android:layout_marginTop="0.3dp"
+        android:textSize="15sp"  android:drawablePadding="10dp" />
+</LinearLayout>

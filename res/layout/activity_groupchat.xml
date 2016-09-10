@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bgcolor" >
+    <include layout="@layout/core_title" android:id="@+id/groupchat_title"/>
+    <ImageView  android:id="@+id/groupchat_serch_icon" android:layout_width="50dp"
+        android:layout_height="50dp" android:padding="15dp" android:background="#ffffff"
+        android:src="@drawable/search_icon" android:layout_below="@id/groupchat_title"/>
+    <com.wuxianedu.widget.HorizontalListView android:id="@+id/groupchat_hlv" 
+        android:layout_width="50dp" android:layout_height="50dp"
+        android:layout_below="@id/groupchat_title" />
+    <com.wuxianedu.widget.ClearEditText android:id="@+id/groupchat_serch" android:layout_width="match_parent"
+        android:layout_height="50dp" android:layout_toRightOf="@id/groupchat_hlv"
+        android:layout_below="@+id/groupchat_title" android:drawableRight="@drawable/d_contact_top_saosuo"
+        android:hint="搜索" android:background="#ffffff" android:paddingRight="5dp"/>
+    <View  android:id="@+id/groupchat_line" android:layout_width="match_parent"
+        android:layout_height="1dp" android:background="@color/bgcolor" 
+         android:layout_below="@id/groupchat_serch"/>
+	
+    <ListView android:id="@+id/groupchat_lv" android:layout_width="match_parent"
+        android:layout_height="match_parent" android:layout_below="@id/groupchat_line"
+       />
+    
+    <com.wuxianedu.widget.SideBar android:layout_height="match_parent"
+        android:layout_width="24dp" android:layout_alignParentRight="true"
+        android:layout_marginTop="60dp" android:layout_marginRight="5dp"
+        android:id="@+id/groupchat_side" android:layout_alignTop="@id/groupchat_lv"/>
+    <TextView android:id="@+id/groupchat_side_text" android:layout_width="50dp"
+        android:layout_height="50dp" android:text="j"
+        android:layout_centerInParent="true" android:background="@drawable/d_side_text"
+        android:gravity="center" android:textColor="#ffffff"
+        android:visibility="gone" />
+</RelativeLayout>

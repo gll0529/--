@@ -1,0 +1,35 @@
+<RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+   	xmlns:tools="http://schemas.android.com/tools">
+   	<include layout="@layout/core_title" android:id="@+id/main_title"/>
+   	<RadioGroup android:layout_width="match_parent" android:layout_height="wrap_content"
+    	android:id="@+id/main_radio_group" android:layout_alignParentBottom="true"
+    	android:orientation="horizontal" android:paddingTop="10dp">
+    
+    <com.wuxianedu.widget.MyRadio android:layout_width="0dp" android:layout_height="wrap_content"
+        android:text="微信" android:drawableTop="@drawable/radiobutton_weixin"
+        android:button="@null" android:gravity="center_horizontal" android:layout_weight="1"
+        android:id="@+id/main_weixin_bt" android:textColor="@color/radio_text"
+        android:checked="true"/>
+    
+    <com.wuxianedu.widget.MyRadio android:layout_width="0dp" android:layout_height="wrap_content"
+        android:text="通讯录" android:drawableTop="@drawable/radiobutton_contact"
+        android:button="@null" android:gravity="center_horizontal" android:layout_weight="1"
+         android:id="@+id/main_contact_bt" android:textColor="@color/radio_text"/>
+    
+    <com.wuxianedu.widget.MyRadio android:layout_width="0dp" android:layout_height="wrap_content"
+        android:text="发现" android:drawableTop="@drawable/radiobutton_find"
+        android:button="@null" android:gravity="center_horizontal" android:layout_weight="1"
+         android:id="@+id/main_find_bt" android:textColor="@color/radio_text"/>
+    
+    <com.wuxianedu.widget.MyRadio android:layout_width="0dp" android:layout_height="wrap_content"
+        android:text="我的" android:drawableTop="@drawable/radiobutton_me"
+        android:button="@null" android:gravity="center_horizontal" android:layout_weight="1"
+         android:id="@+id/main_me_bt" android:textColor="@color/radio_text"/>
+	</RadioGroup>
+
+	<android.support.v4.view.ViewPager android:layout_width="match_parent" android:layout_height="match_parent"
+	       android:id="@+id/viewPager" android:layout_above="@id/main_radio_group"
+	       android:layout_below="@id/main_title"/>
+</RelativeLayout>
+

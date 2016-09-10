@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:background="@color/bgcolor">
+    
+	<com.wuxianedu.widget.SearchEditText android:id="@+id/newfriend_top_sousuo"
+        android:layout_width="match_parent" android:layout_height="40dp"
+        android:layout_margin="10dp" android:background="@drawable/search_ba"
+        android:drawableLeft="@drawable/search_icon" android:drawableRight="@drawable/d_contact_top_saosuo"
+        android:hint="搜索" android:paddingLeft="10dp" android:drawablePadding="10dp"
+        android:paddingRight="10dp"/>
+	<LinearLayout android:id="@+id/newfriend_top_ll" android:layout_width="match_parent" android:layout_height="70dp"
+	    android:orientation="horizontal" android:layout_below="@id/newfriend_top_sousuo" android:background="#ffffff">
+	<com.wuxianedu.widget.NewFriendTextView android:id="@+id/newfriend_text" android:layout_width="23dp"
+	    android:layout_weight="1" android:layout_height="80dp" android:paddingBottom="5dp"
+	    android:text="添加手机联系人" android:gravity="center" 
+	    android:drawableTop="@drawable/a6_" android:background="#ffffff"/>
+	<View android:layout_width="0.5dp" android:layout_height="match_parent"
+	    android:background="@color/bgcolor"/>
+	<com.wuxianedu.widget.NewFriendTextView  android:layout_width="23dp"
+	    android:layout_weight="1" android:layout_height="80dp" 
+	    android:text="添加qq好友" android:gravity="center" 
+	    android:drawableTop="@drawable/a6a" android:background="#ffffff"/>
+	</LinearLayout>
+	<TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+	    android:text="新的朋友" android:layout_marginTop="10dp" android:layout_marginLeft="5dp"
+	    android:layout_below="@id/newfriend_top_ll"/>
+</RelativeLayout>

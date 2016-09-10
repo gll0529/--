@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" android:background="@color/bgcolor"
+    android:padding="10dp">
+    <com.wuxianedu.widget.RoundImageView android:id="@+id/friend_quan_hend" android:layout_width="50dp"
+        android:layout_height="50dp" android:src="@drawable/head_nor" 
+        android:layout_margin="10dp" />
+    <TextView android:id="@+id/friend_quan_name" android:layout_width="wrap_content"
+        android:layout_height="wrap_content" android:text="askjdf"
+        android:textColor="#4CC4F7" android:layout_alignTop="@id/friend_quan_hend"
+        android:layout_marginTop="8dp" android:layout_toRightOf="@id/friend_quan_hend"
+        android:textSize="18dp"/>
+    <TextView  android:id="@+id/friend_quan_sign" android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:maxLines="3" 
+        android:text="fadfasdfsadfsad" android:layout_toRightOf="@id/friend_quan_hend"
+        android:layout_below="@id/friend_quan_name" android:layout_marginTop="5dp"
+        android:textSize="15dp" android:ellipsize="end"/>
+    <com.wuxianedu.widget.GridViewForScroll android:id="@+id/friend_quan_image" android:layout_width="wrap_content"
+        android:layout_height="wrap_content" android:numColumns="3" 
+        android:layout_toRightOf="@id/friend_quan_hend" android:layout_below="@id/friend_quan_sign"
+        android:layout_marginTop="8dp" android:verticalSpacing="10dp"/>
+    <TextView android:id="@+id/friend_quan_date" android:layout_width="wrap_content"
+        android:layout_height="wrap_content" android:text="fasdf"
+        android:layout_toRightOf="@id/friend_quan_hend" android:layout_below="@id/friend_quan_image"
+        android:layout_marginTop="8dp"/>
+    <ImageView  android:id="@+id/friend_quan_zan" android:layout_width="20dp"
+        android:layout_height="20dp" android:src="@drawable/afr" android:scaleType="centerInside"
+         android:layout_below="@id/friend_quan_image"
+        android:layout_marginTop="8dp" android:layout_alignParentRight="true"/>
+    
+
+</RelativeLayout>

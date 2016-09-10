@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+   >
+    
+    <TextView android:id="@+id/newfriend_lv_name" android:layout_width="match_parent"
+        android:layout_height="60dp" android:text="sadfa"
+        android:layout_below="@id/contact_lv_zimu" android:textSize="17dp"
+        android:gravity="center_vertical" android:paddingLeft="60dp"
+        android:background="#ffffff" />
+    <com.wuxianedu.widget.RoundImageView android:id="@+id/newfriend_lv_head_view" android:layout_width="50dp"
+        android:layout_height="50dp" android:src="@drawable/head_nor"
+        android:scaleType="centerCrop" android:layout_alignTop="@id/newfriend_lv_name"
+        android:layout_margin="5dp"/>
+    <Button android:id="@+id/newfriend_lv_bt" android:layout_width="60dp"
+        android:layout_height="40dp" android:text="接受" 
+        android:layout_alignParentRight="true" android:layout_alignTop="@id/newfriend_lv_name"
+        android:background="@drawable/d_newfriend_bt" android:textColor="#ffffff"
+        android:layout_marginTop="9dp" android:layout_marginRight="5dp"
+        />
+
+</RelativeLayout>

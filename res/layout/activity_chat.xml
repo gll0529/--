@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bgcolor">
+    <include layout="@layout/core_title" android:id="@+id/chat_title"/>
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="50dp"
+        android:background="#F7F7F7" android:layout_above="@+id/chat_view"
+        android:orientation="horizontal" android:id="@+id/chat_rela"
+         android:layout_alignParentBottom="true">
+        <ImageView android:id="@+id/chat_yuyin" android:layout_width="35dp"
+            android:layout_height="35dp" android:background="@drawable/d_yuyin_pressed"
+            android:layout_alignParentLeft="true" android:layout_marginTop="8dp"
+            android:layout_marginLeft="10dp"/>
+        <ImageView android:id="@+id/chat_jianpan" android:layout_width="35dp"
+            android:layout_height="35dp" android:background="@drawable/d_jianpan_pressed"
+            android:layout_alignParentLeft="true"  android:layout_marginTop="8dp"
+            android:visibility="gone" />
+        <ImageView android:id="@+id/chat_jiahao" android:layout_width="35dp"
+            android:layout_height="35dp" android:background="@drawable/d_jiahao_pressed"
+            android:layout_alignParentRight="true"  android:layout_marginTop="8dp"
+            android:layout_marginRight="10dp"/>
+        <Button android:id="@+id/chat_fasong" android:layout_width="50dp"
+            android:layout_height="30dp" android:background="@drawable/login_bt"
+            android:layout_alignParentRight="true"  android:layout_marginTop="10dp"
+            android:text="发送" android:textColor="#ffffff" android:visibility="gone"/>
+        <EditText android:id="@+id/chat_shuru" android:layout_width="250dp"
+            android:layout_height="50dp" android:layout_toRightOf="@id/chat_yuyin"
+            android:layout_alignTop="@id/chat_yuyin" android:layout_marginBottom="5dp"
+            android:layout_marginLeft="10dp" android:background="@drawable/login_edit" 
+             android:clickable="false"/>
+        <Button android:id="@+id/chat_luyin" android:layout_width="250dp" 
+            android:layout_height="40dp" android:layout_toRightOf="@id/chat_yuyin"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="10dp" android:background="@drawable/d_luyin_pressed"
+            android:text="按住说话" android:gravity="center" android:visibility="gone"
+            android:layout_marginTop="5dp"/>
+        <ImageView android:id="@+id/chat_biaoqing" android:layout_width="30dp"
+            android:layout_height="30dp" android:layout_alignParentRight="true"
+            android:background="@drawable/d_biaoqing_pressed" android:layout_marginTop="10dp"
+            android:layout_marginRight="55dp" />
+ 
+    </RelativeLayout>
+    <ListView android:id="@+id/chat_lv" android:layout_width="match_parent"
+            android:layout_height="match_parent" android:layout_above="@id/chat_rela"
+            android:layout_below="@id/chat_title" android:background="@color/bgcolor"
+            android:divider="@color/bgcolor" android:dividerHeight="20dp"
+            android:clickable="false"/>
+
+    <RelativeLayout
+        android:id="@+id/chat_view" android:layout_width="match_parent"
+        android:layout_height="200dp" android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true" android:background="@color/bgcolor"
+        android:visibility="gone">
+
+        <GridView
+            android:id="@+id/chat_gv" android:layout_width="match_parent"
+			android:layout_height="150dp" android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true" android:numColumns="3" 
+            android:layout_marginLeft="50dp" android:horizontalSpacing="30dp"
+            android:verticalSpacing="10dp" android:layout_marginTop="20dp" 
+            />
+        
+        <GridView
+            android:id="@+id/chat_gv_biaoqing" android:layout_width="match_parent"
+			android:layout_height="150dp" android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true" android:numColumns="7" 
+            android:layout_marginLeft="20dp" android:horizontalSpacing="20dp"
+            android:verticalSpacing="10dp" android:layout_marginTop="20dp" 
+            />
+        
+    </RelativeLayout>
+	<RelativeLayout android:id="@+id/yuyintishi" android:layout_width="100dp"
+	    android:layout_height="100dp" android:layout_centerInParent="true"
+	    android:background="@drawable/d_yuyinshuru_pressed" 
+	    android:visibility="gone">
+	    <ImageView android:id="@+id/yuyintishi_mic" android:layout_width="70dp"
+	        android:layout_height="70dp" android:layout_centerHorizontal="true"
+	        android:background="@anim/video_frame"/>
+	    <TextView android:id="@+id/yuyintishi_tishi" android:layout_width="wrap_content"
+	        android:layout_height="wrap_content" android:text="向上滑动,取消发送"
+	        android:layout_centerHorizontal="true" android:layout_below="@id/yuyintishi_mic"
+	        android:textColor="#ffffff" android:textSize="10sp"/>
+	</RelativeLayout>
+</RelativeLayout>

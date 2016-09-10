@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+	<TextView android:id="@+id/information_title_date" android:layout_width="180dp"
+	    android:layout_height="wrap_content" android:text="fklasdjl" 
+	    android:layout_gravity="center_horizontal" android:layout_marginTop="30dp"
+	    android:background="@drawable/d_sub_text" android:textColor="#ffffff"
+	    android:gravity="center_horizontal"/>
+	<RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+	    android:background="#ffffff" android:layout_margin="20dp" android:paddingRight="15dp">
+	    <TextView android:id="@+id/information_name" 
+	        android:layout_width="wrap_content" android:layout_height="wrap_content"
+	        android:layout_marginTop="20dp" android:layout_marginLeft="30dp"
+	        android:text="红龙梦"  android:textStyle="bold" 
+	        android:textSize="16sp"/>
+	    <TextView android:id="@+id/information_date" android:layout_width="wrap_content"
+	        android:layout_height="wrap_content" android:layout_marginTop="5dp"
+	        android:layout_marginLeft="20dp" android:layout_below="@id/information_name"
+	        android:text="sfsfsdfa" android:textSize="14sp"/>
+	    <ImageView android:id="@+id/information_image" android:layout_width="305dp"
+	        android:layout_height="200dp" android:src="@drawable/image_nor" 
+	        android:scaleType="centerCrop" android:layout_below="@id/information_date"
+	        android:layout_marginLeft="20dp" android:layout_marginTop="10dp"/>
+	    <TextView  android:id="@+id/information_sign" android:layout_width="wrap_content"
+	        android:layout_height="wrap_content" android:layout_below="@id/information_image"
+	        android:layout_marginLeft="20dp" android:text="sdfasdfas"
+	        android:textSize="15dp" android:layout_marginTop="10dp"
+	        />
+	    <View android:layout_width="match_parent" android:layout_height="1dp" 
+	        android:background="@color/bgcolor" android:layout_marginLeft="10dp"
+	        android:layout_marginTop="10dp"
+	        android:layout_marginRight="10dp" android:layout_below="@id/information_sign"/>
+	    <TextView android:layout_width="match_parent" android:layout_height="40dp"
+	        android:text="阅读全文" android:drawableRight="@drawable/right"  
+	        android:layout_below="@id/information_sign" android:layout_marginTop="10dp"
+	        android:layout_marginLeft="10dp" android:textStyle="italic" 
+	        android:textSize="15sp" android:gravity="center_vertical"
+	        android:layout_marginRight="30dp"/>
+	</RelativeLayout>
+</LinearLayout>

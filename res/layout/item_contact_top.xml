@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <com.wuxianedu.widget.SearchEditText android:id="@+id/contact_top_sousuo"
+        android:layout_width="match_parent" android:layout_height="40dp"
+        android:layout_margin="10dp" android:background="@drawable/search_ba"
+        android:drawableLeft="@drawable/search_icon" android:drawableRight="@drawable/d_contact_top_saosuo"
+        android:hint="搜索" android:paddingLeft="10dp" android:drawablePadding="10dp"
+        android:paddingRight="10dp"/>
+    
+    <RelativeLayout android:id="@+id/contact_top_text" android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        
+        <TextView android:id="@+id/contact_top_addfriend" android:layout_width="match_parent"
+        	android:layout_height="60dp" android:text="新朋友"
+        	android:textSize="17dp" android:gravity="center_vertical" 
+        	android:paddingLeft="60dp" android:background="@drawable/d_click"/>
+   		<com.wuxianedu.widget.RoundImageView android:id="@+id/contact_top_addfriend_head" android:layout_width="50dp"
+        	android:layout_height="50dp" android:src="@drawable/icon_addfriend"
+        	android:scaleType="centerCrop" android:layout_alignTop="@id/contact_top_addfriend"
+        	android:layout_margin="5dp" />
+   		
+   		 <TextView android:id="@+id/contact_top_groupchat" android:layout_width="match_parent"
+        	android:layout_height="60dp" android:text="群聊"
+        	android:textSize="17dp"  android:layout_below="@id/contact_top_addfriend"
+        	android:gravity="center_vertical" android:paddingLeft="60dp"
+        	android:background="@drawable/d_click" android:layout_marginTop="0.3dp" />
+   		<com.wuxianedu.widget.RoundImageView android:id="@+id/contact_top_group_name" android:layout_width="50dp"
+        	android:layout_height="50dp" android:src="@drawable/icon_qunliao"
+        	android:scaleType="centerCrop" android:layout_alignTop="@id/contact_top_groupchat"
+        	android:layout_margin="5dp"  />
+   		
+   		<TextView android:id="@+id/contact_top_publichao" android:layout_width="match_parent"
+        	android:layout_height="60dp" android:text="公众号"
+        	android:textSize="17dp"  android:layout_below="@id/contact_top_groupchat"
+        	android:gravity="center_vertical" android:paddingLeft="60dp"
+        	android:background="@drawable/d_click"  android:layout_marginTop="0.3dp" />
+   		<com.wuxianedu.widget.RoundImageView android:id="@+id/contact_top_publichao_name" android:layout_width="50dp"
+        	android:layout_height="50dp" android:src="@drawable/icon_public"
+        	android:scaleType="centerCrop" android:layout_alignTop="@id/contact_top_publichao"
+        	android:layout_margin="5dp"  />
+    </RelativeLayout>
+
+</LinearLayout>

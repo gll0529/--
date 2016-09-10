@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/bgcolor" >
+    <include layout="@layout/core_title"/>
+	<TextView android:layout_width="match_parent" android:layout_height="50dp"
+        android:drawableRight="@drawable/right"  android:paddingLeft="25dp"
+        android:text="账号信息"  android:background="#ffffff" android:layout_marginTop="20dp"
+        android:textSize="15sp"  android:drawablePadding="10dp" 
+        android:gravity="center_vertical" android:paddingRight="20dp"/>
+	
+	<TextView android:layout_width="match_parent" android:layout_height="50dp"
+        android:drawableRight="@drawable/right"  android:paddingLeft="25dp"
+        android:text="新消息通知"  android:background="#ffffff" android:layout_marginTop="20dp"
+        android:textSize="15sp"  android:drawablePadding="10dp" 
+        android:gravity="center_vertical" android:paddingRight="20dp"/>
+	
+	<TextView android:layout_width="match_parent" android:layout_height="50dp"
+        android:drawableRight="@drawable/right"  android:paddingLeft="25dp"
+        android:text="隐私"  android:background="#ffffff" android:layout_marginTop="0.3dp"
+        android:textSize="15sp"  android:drawablePadding="10dp" 
+        android:gravity="center_vertical" android:paddingRight="20dp"/>
+	
+	<TextView android:layout_width="match_parent" android:layout_height="50dp"
+        android:drawableRight="@drawable/right"  android:paddingLeft="25dp"
+        android:text="通用"  android:background="#ffffff" android:layout_marginTop="0.3dp"
+        android:textSize="15sp" android:drawablePadding="10dp" 
+        android:gravity="center_vertical" android:paddingRight="20dp"/>
+	
+	<TextView android:layout_width="match_parent" android:layout_height="50dp"
+        android:drawableRight="@drawable/right"  android:paddingLeft="25dp"
+        android:text="关于微信"  android:background="#ffffff" android:layout_marginTop="20dp"
+        android:textSize="15sp"  android:drawablePadding="10dp" 
+        android:gravity="center_vertical" android:paddingRight="20dp"/>
+	
+	<Button android:layout_width="match_parent" android:layout_height="55dp"
+	    android:layout_marginTop="15dp" android:layout_marginLeft="10dp"
+	    android:layout_marginRight="15dp" android:text="退出登录" 
+	    android:background="@drawable/find_bt" android:textColor="#ffffff"
+	    android:id="@+id/me_tuichu" android:textSize="16sp"/>
+	
+	
+</LinearLayout>
